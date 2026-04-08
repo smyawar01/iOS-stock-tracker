@@ -8,8 +8,8 @@ struct StockListView<ViewModel: StockListViewModelProtocol>: View {
         self.viewModel = viewModel
     }
     var body: some View {
-        List(viewModel.stocks, id: \.self) { stock in
-            Text(stock)
+        List(viewModel.stocks, id: \.self) {
+            StockListCell(viewData: $0)
         }
     }
 }

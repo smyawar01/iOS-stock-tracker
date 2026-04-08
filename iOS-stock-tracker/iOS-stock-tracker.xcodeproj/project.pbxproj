@@ -29,14 +29,37 @@
 		18AC17002F8684DC002D5E1A /* iOS-stock-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-stock-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18A549FC2F86AD8E00061119 /* Exceptions for "iOS-stock-tracker" folder in "iOS-stock-trackerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Features/StockList/UI/StockListViewModel.swift,
+			);
+			target = 18AC16F52F8684DB002D5E1A /* iOS-stock-trackerTests */;
+		};
+		18A549FE2F86BB3300061119 /* Exceptions for "iOS-stock-trackerTests" folder in "iOS-stock-tracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FeatureTests/StockListTests/StockListFixture.swift,
+			);
+			target = 18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		18AC16EB2F8684D7002D5E1A /* iOS-stock-tracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18A549FC2F86AD8E00061119 /* Exceptions for "iOS-stock-tracker" folder in "iOS-stock-trackerTests" target */,
+			);
 			path = "iOS-stock-tracker";
 			sourceTree = "<group>";
 		};
 		18AC16F92F8684DB002D5E1A /* iOS-stock-trackerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18A549FE2F86BB3300061119 /* Exceptions for "iOS-stock-trackerTests" folder in "iOS-stock-tracker" target */,
+			);
 			path = "iOS-stock-trackerTests";
 			sourceTree = "<group>";
 		};
