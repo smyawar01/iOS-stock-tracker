@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		18AC16F72F8684DB002D5E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AC16E12F8684D7002D5E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AC16E82F8684D7002D5E1A;
+			remoteInfo = "iOS-stock-tracker";
+		};
+		18AC17012F8684DC002D5E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AC16E12F8684D7002D5E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AC16E82F8684D7002D5E1A;
+			remoteInfo = "iOS-stock-tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18AC16E92F8684D7002D5E1A /* iOS-stock-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-stock-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AC16F62F8684DB002D5E1A /* iOS-stock-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-stock-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AC17002F8684DC002D5E1A /* iOS-stock-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-stock-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		18AC16EB2F8684D7002D5E1A /* iOS-stock-tracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "iOS-stock-tracker";
+			sourceTree = "<group>";
+		};
+		18AC16F92F8684DB002D5E1A /* iOS-stock-trackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "iOS-stock-trackerTests";
+			sourceTree = "<group>";
+		};
+		18AC17032F8684DC002D5E1A /* iOS-stock-trackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "iOS-stock-trackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AC16E62F8684D7002D5E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AC16F32F8684DB002D5E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AC16FD2F8684DC002D5E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AC16E02F8684D7002D5E1A = {
+			isa = PBXGroup;
+			children = (
+				18AC16EB2F8684D7002D5E1A /* iOS-stock-tracker */,
+				18AC16F92F8684DB002D5E1A /* iOS-stock-trackerTests */,
+				18AC17032F8684DC002D5E1A /* iOS-stock-trackerUITests */,
+				18AC16EA2F8684D7002D5E1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18AC16EA2F8684D7002D5E1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AC16E92F8684D7002D5E1A /* iOS-stock-tracker.app */,
+				18AC16F62F8684DB002D5E1A /* iOS-stock-trackerTests.xctest */,
+				18AC17002F8684DC002D5E1A /* iOS-stock-trackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AC170A2F8684DC002D5E1A /* Build configuration list for PBXNativeTarget "iOS-stock-tracker" */;
+			buildPhases = (
+				18AC16E52F8684D7002D5E1A /* Sources */,
+				18AC16E62F8684D7002D5E1A /* Frameworks */,
+				18AC16E72F8684D7002D5E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				18AC16EB2F8684D7002D5E1A /* iOS-stock-tracker */,
+			);
+			name = "iOS-stock-tracker";
+			packageProductDependencies = (
+			);
+			productName = "iOS-stock-tracker";
+			productReference = 18AC16E92F8684D7002D5E1A /* iOS-stock-tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18AC16F52F8684DB002D5E1A /* iOS-stock-trackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AC170D2F8684DC002D5E1A /* Build configuration list for PBXNativeTarget "iOS-stock-trackerTests" */;
+			buildPhases = (
+				18AC16F22F8684DB002D5E1A /* Sources */,
+				18AC16F32F8684DB002D5E1A /* Frameworks */,
+				18AC16F42F8684DB002D5E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AC16F82F8684DB002D5E1A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18AC16F92F8684DB002D5E1A /* iOS-stock-trackerTests */,
+			);
+			name = "iOS-stock-trackerTests";
+			packageProductDependencies = (
+			);
+			productName = "iOS-stock-trackerTests";
+			productReference = 18AC16F62F8684DB002D5E1A /* iOS-stock-trackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18AC16FF2F8684DC002D5E1A /* iOS-stock-trackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AC17102F8684DC002D5E1A /* Build configuration list for PBXNativeTarget "iOS-stock-trackerUITests" */;
+			buildPhases = (
+				18AC16FC2F8684DC002D5E1A /* Sources */,
+				18AC16FD2F8684DC002D5E1A /* Frameworks */,
+				18AC16FE2F8684DC002D5E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AC17022F8684DC002D5E1A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18AC17032F8684DC002D5E1A /* iOS-stock-trackerUITests */,
+			);
+			name = "iOS-stock-trackerUITests";
+			packageProductDependencies = (
+			);
+			productName = "iOS-stock-trackerUITests";
+			productReference = 18AC17002F8684DC002D5E1A /* iOS-stock-trackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AC16E12F8684D7002D5E1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					18AC16E82F8684D7002D5E1A = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					18AC16F52F8684DB002D5E1A = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 18AC16E82F8684D7002D5E1A;
+					};
+					18AC16FF2F8684DC002D5E1A = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 18AC16E82F8684D7002D5E1A;
+					};
+				};
+			};
+			buildConfigurationList = 18AC16E42F8684D7002D5E1A /* Build configuration list for PBXProject "iOS-stock-tracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18AC16E02F8684D7002D5E1A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 18AC16EA2F8684D7002D5E1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */,
+				18AC16F52F8684DB002D5E1A /* iOS-stock-trackerTests */,
+				18AC16FF2F8684DC002D5E1A /* iOS-stock-trackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AC16E72F8684D7002D5E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AC16F42F8684DB002D5E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AC16FE2F8684DC002D5E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AC16E52F8684D7002D5E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AC16F22F8684DB002D5E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AC16FC2F8684DC002D5E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18AC16F82F8684DB002D5E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */;
+			targetProxy = 18AC16F72F8684DB002D5E1A /* PBXContainerItemProxy */;
+		};
+		18AC17022F8684DC002D5E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */;
+			targetProxy = 18AC17012F8684DC002D5E1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18AC17082F8684DC002D5E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18AC17092F8684DC002D5E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18AC170B2F8684DC002D5E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.iOS-stock-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18AC170C2F8684DC002D5E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.iOS-stock-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18AC170E2F8684DC002D5E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.iOS-stock-trackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-stock-tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-stock-tracker";
+			};
+			name = Debug;
+		};
+		18AC170F2F8684DC002D5E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.iOS-stock-trackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-stock-tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-stock-tracker";
+			};
+			name = Release;
+		};
+		18AC17112F8684DC002D5E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.iOS-stock-trackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-stock-tracker";
+			};
+			name = Debug;
+		};
+		18AC17122F8684DC002D5E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.iOS-stock-trackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-stock-tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AC16E42F8684D7002D5E1A /* Build configuration list for PBXProject "iOS-stock-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AC17082F8684DC002D5E1A /* Debug */,
+				18AC17092F8684DC002D5E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AC170A2F8684DC002D5E1A /* Build configuration list for PBXNativeTarget "iOS-stock-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AC170B2F8684DC002D5E1A /* Debug */,
+				18AC170C2F8684DC002D5E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AC170D2F8684DC002D5E1A /* Build configuration list for PBXNativeTarget "iOS-stock-trackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AC170E2F8684DC002D5E1A /* Debug */,
+				18AC170F2F8684DC002D5E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AC17102F8684DC002D5E1A /* Build configuration list for PBXNativeTarget "iOS-stock-trackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AC17112F8684DC002D5E1A /* Debug */,
+				18AC17122F8684DC002D5E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AC16E12F8684D7002D5E1A /* Project object */;
+}
