@@ -13,11 +13,11 @@ struct StockListCell: View {
     var body: some View {
         HStack {
             Text(viewData.symbol)
-                .font(.system(.title2, weight: .bold))
+                .font(ThemeFont.title)
             Spacer()
             VStack(alignment: .trailing) {
                 Text(viewData.currentPrice)
-                    .font(.system(.title2, weight: .bold))
+                    .font(ThemeFont.title)
                 Text(viewData.priceChange)
                     .foregroundColor(.white)
                     .padding(5)

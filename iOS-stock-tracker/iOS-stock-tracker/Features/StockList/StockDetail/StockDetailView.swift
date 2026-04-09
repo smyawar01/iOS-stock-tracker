@@ -10,14 +10,14 @@ struct StockDetailView: View {
                 HStack {
                     VStack(alignment: .leading, spacing: 8) {
                         Text(viewData.description)
-                            .font(.title3)
+                            .font(ThemeFont.subtitle)
                             .foregroundColor(.secondary)
                         
                         Text(viewData.currentPrice)
-                            .font(.system(size: 54, weight: .bold))
+                            .font(ThemeFont.prominentPrice)
                         
                         Text(viewData.priceChange)
-                            .font(.title3.bold())
+                            .font(ThemeFont.highlightedSubtitle)
                             .foregroundColor(.white)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 5)
@@ -32,11 +32,11 @@ struct StockDetailView: View {
                     .padding(.vertical, 10)
                 
                 Text("About")
-                    .font(.title2.bold())
+                    .font(ThemeFont.sectionHeader)
                     .padding(.horizontal)
                 
                 Text("\(viewData.description)")
-                    .font(.body)
+                    .font(ThemeFont.body)
                     .foregroundColor(.secondary)
                     .padding(.horizontal)
             }
