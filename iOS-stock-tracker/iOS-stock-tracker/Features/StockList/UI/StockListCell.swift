@@ -19,8 +19,9 @@ struct StockListCell: View {
                 Text(viewData.currentPrice)
                     .font(.system(.title2, weight: .bold))
                 Text(viewData.priceChange)
+                    .foregroundColor(.white)
                     .padding(5)
-                    .background(.green)
+                    .background(viewData.priceChange.hasPrefix("-") ? .red : .green)
                     .clipShape(RoundedRectangle(cornerRadius: 5))
             }
         }
