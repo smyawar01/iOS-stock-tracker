@@ -2,7 +2,7 @@ import SwiftUI
 
 struct StockListView<ViewModel: StockListViewModelProtocol>: View {
     
-    private let viewModel: ViewModel
+    @State private var viewModel: ViewModel
     
     init(viewModel: ViewModel) {
         self.viewModel = viewModel

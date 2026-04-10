@@ -44,12 +44,20 @@
 			);
 			target = 18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */;
 		};
+		18A54A232F881F0800061119 /* Exceptions for "iOS-stock-tracker" folder in "iOS-stock-tracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 18AC16E82F8684D7002D5E1A /* iOS-stock-tracker */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		18AC16EB2F8684D7002D5E1A /* iOS-stock-tracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				18A54A232F881F0800061119 /* Exceptions for "iOS-stock-tracker" folder in "iOS-stock-tracker" target */,
 				18A549FC2F86AD8E00061119 /* Exceptions for "iOS-stock-tracker" folder in "iOS-stock-trackerTests" target */,
 			);
 			path = "iOS-stock-tracker";
@@ -420,6 +428,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-stock-tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +456,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-stock-tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

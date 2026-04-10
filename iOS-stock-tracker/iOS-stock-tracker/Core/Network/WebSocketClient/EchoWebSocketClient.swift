@@ -36,7 +36,6 @@ public final class EchoWebSocketClient: WebSocketClientProtocol {
             switch result {
             case .failure(let error):
                 print("WebSocket receiving error: \(error)")
-                // Reconnect logic or just log in a real app
             case .success(let message):
                 switch message {
                 case .string(let text):
@@ -49,7 +48,6 @@ public final class EchoWebSocketClient: WebSocketClientProtocol {
                     break
                 }
                 
-                // Continue listening
                 self.receiveMessage()
             }
         }
