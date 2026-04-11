@@ -20,12 +20,16 @@ public struct StockListItemViewData: Hashable {
 @MainActor
 public protocol StockListViewModelProtocol {
     var stocks: [StockListItemViewData] { get }
+    var isConnected: Bool { get }
+    func connect()
+    func disconnect()
 }
 
 @Observable
 public final class StockListViewModel: StockListViewModelProtocol {
     
     public private(set) var stocks: [StockListItemViewData] = StockListItemViewData.mockStocks
+    public private(set) var isConnected: Bool = false
     
     @ObservationIgnored
     private var livePriceService: LivePriceServiceProtocol
@@ -35,13 +39,22 @@ public final class StockListViewModel: StockListViewModelProtocol {
         setupService()
     }
     
-    private func setupService() {
-        livePriceService.onPriceUpdate = { [weak self] update in
-                self?.handlePriceUpdate(update)
-        }
-        
+    public func connect() {
         let symbols = stocks.map { $0.symbol }
         livePriceService.startTracking(symbols: symbols)
+        isConnected = true
+    }
+    
+    public func disconnect() {
+        livePriceService.stopTracking()
+        isConnected = false
+    }
+    
+    private func setupService() {
+        livePriceService.onPriceUpdate = { [weak self] update in
+            self?.handlePriceUpdate(update)
+        }
+        connect()
     }
     
     private func handlePriceUpdate(_ update: PriceUpdate) {
@@ -54,7 +67,6 @@ public final class StockListViewModel: StockListViewModelProtocol {
                 description: oldData.description
             )
             stocks[index] = newData
-            print("new data: \(newData)")
         }
     }
 }

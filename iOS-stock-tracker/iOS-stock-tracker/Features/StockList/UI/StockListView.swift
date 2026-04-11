@@ -44,6 +44,26 @@ struct StockListView<ViewModel: StockListViewModelProtocol>: View {
             .listStyle(.plain)
         }
         .navigationTitle("Stocks")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    if viewModel.isConnected {
+                        viewModel.disconnect()
+                    } else {
+                        viewModel.connect()
+                    }
+                } label: {
+                    HStack(spacing: 5) {
+                        Circle()
+                            .fill(viewModel.isConnected ? Color.green : Color.red)
+                            .frame(width: 8, height: 8)
+                        Text(viewModel.isConnected ? "Live" : "Offline")
+                            .font(.subheadline.weight(.medium))
+                            .foregroundColor(viewModel.isConnected ? .green : .red)
+                    }
+                }
+            }
+        }
     }
 }
 
