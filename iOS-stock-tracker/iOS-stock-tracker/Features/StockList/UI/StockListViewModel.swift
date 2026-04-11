@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 import Observation
 
 
@@ -33,6 +34,9 @@ public final class StockListViewModel: StockListViewModelProtocol {
     
     @ObservationIgnored
     private var livePriceService: LivePriceServiceProtocol
+
+    @ObservationIgnored
+    private var cancellable: AnyCancellable?
     
     public init(livePriceService: LivePriceServiceProtocol = LivePriceService()) {
         self.livePriceService = livePriceService
@@ -51,9 +55,10 @@ public final class StockListViewModel: StockListViewModelProtocol {
     }
     
     private func setupService() {
-        livePriceService.onPriceUpdate = { [weak self] update in
-            self?.handlePriceUpdate(update)
-        }
+        cancellable = livePriceService.priceUpdatePublisher
+            .sink { [weak self] update in
+                self?.handlePriceUpdate(update)
+            }
         connect()
     }
     

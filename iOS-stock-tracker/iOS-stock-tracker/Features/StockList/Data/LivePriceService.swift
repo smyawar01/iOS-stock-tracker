@@ -2,8 +2,16 @@ import Foundation
 import Combine
 
 public final class LivePriceService: LivePriceServiceProtocol {
-    public var onPriceUpdate: ((PriceUpdate) -> Void)?
 
+    // MARK: - LivePriceServiceProtocol
+
+    public var priceUpdatePublisher: AnyPublisher<PriceUpdate, Never> {
+        priceUpdateSubject.eraseToAnyPublisher()
+    }
+
+    // MARK: - Private
+
+    private let priceUpdateSubject = PassthroughSubject<PriceUpdate, Never>()
     private let webSocketClient: WebSocketClientProtocol
     private var symbols: [String] = []
     private var timer: Timer?
@@ -49,7 +57,7 @@ public final class LivePriceService: LivePriceServiceProtocol {
             }
             .receive(on: DispatchQueue.main)
             .sink { [weak self] update in
-                self?.onPriceUpdate?(update)
+                self?.priceUpdateSubject.send(update)
             }
     }
 
