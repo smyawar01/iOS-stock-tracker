@@ -1,8 +1,10 @@
 import Foundation
+import Combine
 
 public protocol WebSocketClientProtocol: AnyObject {
-    var onReceive: ((String) -> Void)? { get set }
     
+    var messagePublisher: AnyPublisher<String, Never> { get }
+
     func connect()
     func disconnect()
     func send(text: String)
