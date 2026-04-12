@@ -61,3 +61,6 @@ The testing environment relies on custom mock objects avoiding external network 
 
 ### Localization Support
 Localization support was added.
+
+### TODO
+Add proper routing logic by introducing router based on SwiftUI & new NavigationPath APis. (Not added due to time limitation)
