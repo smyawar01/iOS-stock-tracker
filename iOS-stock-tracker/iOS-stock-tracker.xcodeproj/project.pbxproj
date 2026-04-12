@@ -33,7 +33,13 @@
 		18A549FC2F86AD8E00061119 /* Exceptions for "iOS-stock-tracker" folder in "iOS-stock-trackerTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Core/Network/WebSocketClient/EchoWebSocketClient.swift,
+				Core/Network/WebSocketClient/WebSocketClientProtocol.swift,
+				Features/StockList/Data/LivePriceService.swift,
+				Features/StockList/Data/LivePriceServiceProtocol.swift,
+				Features/StockList/Data/Models/PriceUpdate.swift,
 				Features/StockList/UI/StockListViewModel.swift,
+				Features/StockList/UI/StockSortOption.swift,
 			);
 			target = 18AC16F52F8684DB002D5E1A /* iOS-stock-trackerTests */;
 		};
