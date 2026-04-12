@@ -13,7 +13,7 @@ struct StockListView<ViewModel: StockListViewModelProtocol>: View {
         VStack(spacing: 0) {
             Picker("Sort by", selection: $sortOption) {
                 ForEach(StockSortOption.allCases) { option in
-                    Text(option.rawValue).tag(option)
+                    Text(option.localizedName).tag(option)
                 }
             }
             .pickerStyle(.segmented)
@@ -51,7 +51,7 @@ struct StockListView<ViewModel: StockListViewModelProtocol>: View {
                         Circle()
                             .fill(viewModel.isConnected ? Color.green : Color.red)
                             .frame(width: 8, height: 8)
-                        Text(viewModel.isConnected ? "Live" : "Offline")
+                        Text(viewModel.isConnected ? LocalizedStringKey("Live") : LocalizedStringKey("Offline"))
                             .font(.subheadline.weight(.medium))
                             .foregroundColor(viewModel.isConnected ? .green : .red)
                     }

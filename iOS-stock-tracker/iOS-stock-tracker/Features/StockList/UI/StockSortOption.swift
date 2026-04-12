@@ -5,6 +5,13 @@ public enum StockSortOption: String, CaseIterable, Identifiable {
     case priceChange = "Change"
 
     public var id: String { rawValue }
+    
+    public var localizedName: LocalizedStringResource {
+        switch self {
+        case .price: return LocalizedStringResource("Price")
+        case .priceChange: return LocalizedStringResource("Change")
+        }
+    }
 }
 
 public extension StockListItemViewData {
