@@ -55,3 +55,6 @@ The testing environment relies on custom mock objects avoiding external network 
   - Ensures that random-update `Timer` instances correctly boot and invalidate precisely when `.startTracking()` and `.stopTracking()` are invoked.
 - **`EchoWebSocketClientTests`**:
   - An integration-style harness. It boots an actual connection to `wss://ws.postman-echo.com/raw`, executes a test payload, and uses `XCTestExpectation` objects to ensure the websocket properly hands the echoed message downstream into the publisher pipeline.
+
+### Theme (User selected dark theme supported)
+<img width="209" height="461" alt="Screenshot 2026-04-12 at 5 53 35 PM" src="https://github.com/user-attachments/assets/d313598a-deab-4178-94a8-602a0890ba09" />
