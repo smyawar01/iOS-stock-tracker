@@ -4,6 +4,14 @@ A real-time iOS application that tracks stock prices. It features a completely r
 
 ---
 
+## Video
+
+
+
+https://github.com/user-attachments/assets/cbaf2bf4-4560-4a2d-bb84-efb7f9c13db9
+
+
+
 ## 🏗 Architecture & Components
 
 The application adopts a layered architecture heavily emphasizing unidirectional data flow, protocol-oriented design for testability, and reactive Combine pipelines.
@@ -29,6 +37,9 @@ The brain of the UI, managing all visual state and responding to service-level e
 ## 🧪 Unit Testing & Mocking
 
 The application is engineered with protocol-oriented design to guarantee robust isolation and maintainability across all test scenarios.
+
+### Unit test coverage
+<img width="1129" height="171" alt="Screenshot 2026-04-12 at 5 10 46 PM" src="https://github.com/user-attachments/assets/02e28204-7f55-433b-a861-53da59d571d3" />
 
 ### Mocking Strategy
 The testing environment relies on custom mock objects avoiding external network dependencies and allowing explicit state control during assertion:
