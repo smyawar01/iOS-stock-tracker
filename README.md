@@ -58,3 +58,6 @@ The testing environment relies on custom mock objects avoiding external network 
 
 ### Theme (User selected dark theme supported)
 <img width="209" height="461" alt="Screenshot 2026-04-12 at 5 53 35 PM" src="https://github.com/user-attachments/assets/d313598a-deab-4178-94a8-602a0890ba09" />
+
+### Localization Support
+Localization support was added.
