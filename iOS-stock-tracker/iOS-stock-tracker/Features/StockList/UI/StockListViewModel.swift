@@ -36,7 +36,7 @@ public final class StockListViewModel: StockListViewModelProtocol {
     private var livePriceService: LivePriceServiceProtocol
 
     @ObservationIgnored
-    private var cancellable: AnyCancellable?
+    private var cancellables: Set<AnyCancellable> = []
     
     public init(livePriceService: LivePriceServiceProtocol = LivePriceService()) {
         self.livePriceService = livePriceService
@@ -46,19 +46,28 @@ public final class StockListViewModel: StockListViewModelProtocol {
     public func connect() {
         let symbols = stocks.map { $0.symbol }
         livePriceService.startTracking(symbols: symbols)
-        isConnected = true
     }
     
     public func disconnect() {
         livePriceService.stopTracking()
-        isConnected = false
     }
     
     private func setupService() {
-        cancellable = livePriceService.priceUpdatePublisher
+        livePriceService.priceUpdatePublisher
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] update in
                 self?.handlePriceUpdate(update)
             }
+            .store(in: &cancellables)
+            
+        livePriceService.connectionPublisher
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] connected in
+                self?.isConnected = connected
+                if !connected { self?.disconnect() }
+            }
+            .store(in: &cancellables)
+            
         connect()
     }
     

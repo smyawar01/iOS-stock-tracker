@@ -5,12 +5,17 @@ public final class EchoWebSocketClient: WebSocketClientProtocol {
 
     // MARK: - WebSocketClientProtocol
 
+    public var connectionPublisher: AnyPublisher<Bool, Never> {
+        connectionSubject.eraseToAnyPublisher()
+    }
+
     public var messagePublisher: AnyPublisher<String, Never> {
         messageSubject.eraseToAnyPublisher()
     }
 
     // MARK: - Private
 
+    private let connectionSubject = PassthroughSubject<Bool, Never>()
     private let messageSubject = PassthroughSubject<String, Never>()
     private let url = URL(string: "wss://ws.postman-echo.com/raw")!
     private var webSocketTask: URLSessionWebSocketTask?
@@ -21,12 +26,14 @@ public final class EchoWebSocketClient: WebSocketClientProtocol {
     public func connect() {
         webSocketTask = session.webSocketTask(with: url)
         webSocketTask?.resume()
+        connectionSubject.send(true)
         receiveMessage()
     }
 
     public func disconnect() {
         webSocketTask?.cancel(with: .goingAway, reason: nil)
         webSocketTask = nil
+        connectionSubject.send(false)
     }
 
     public func send(text: String) {
@@ -45,6 +52,7 @@ public final class EchoWebSocketClient: WebSocketClientProtocol {
             switch result {
             case .failure(let error):
                 print("WebSocket receiving error: \(error)")
+                connectionSubject.send(false)
             case .success(let message):
                 switch message {
                 case .string(let text):

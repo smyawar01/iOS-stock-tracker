@@ -5,6 +5,10 @@ public final class LivePriceService: LivePriceServiceProtocol {
 
     // MARK: - LivePriceServiceProtocol
 
+    public var connectionPublisher: AnyPublisher<Bool, Never> {
+        webSocketClient.connectionPublisher
+    }
+
     public var priceUpdatePublisher: AnyPublisher<PriceUpdate, Never> {
         priceUpdateSubject.eraseToAnyPublisher()
     }
