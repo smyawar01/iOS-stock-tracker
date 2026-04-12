@@ -4,9 +4,7 @@
 //
 //  Created by Apple on 12/04/2026.
 //
-import XCTest
 import Combine
-@testable import iOS_stock_tracker
 
 final class MockLivePriceService: LivePriceServiceProtocol {
     let connectionSubject = PassthroughSubject<Bool, Never>()
