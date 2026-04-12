@@ -9,15 +9,6 @@ struct StockListView<ViewModel: StockListViewModelProtocol>: View {
         self.viewModel = viewModel
     }
 
-    private var sortedStocks: [StockListItemViewData] {
-        switch sortOption {
-        case .price:
-            return viewModel.stocks.sorted { $0.numericPrice > $1.numericPrice }
-        case .priceChange:
-            return viewModel.stocks.sorted { $0.numericChange > $1.numericChange }
-        }
-    }
-
     var body: some View {
         VStack(spacing: 0) {
             Picker("Sort by", selection: $sortOption) {
@@ -28,8 +19,11 @@ struct StockListView<ViewModel: StockListViewModelProtocol>: View {
             .pickerStyle(.segmented)
             .padding(.horizontal)
             .padding(.vertical, 8)
+            .onChange(of: sortOption) { oldValue, newValue in
+                viewModel.sort(filter: newValue)
+            }
 
-            List(sortedStocks, id: \.self) { stock in
+            List(viewModel.stocks, id: \.self) { stock in
                 ZStack {
                     NavigationLink(destination: StockDetailView(viewData: stock)) {
                         EmptyView()

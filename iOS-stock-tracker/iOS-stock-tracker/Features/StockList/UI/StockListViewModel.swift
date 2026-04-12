@@ -24,19 +24,20 @@ public protocol StockListViewModelProtocol {
     var isConnected: Bool { get }
     func connect()
     func disconnect()
+    func sort(filter: StockSortOption)
 }
 
 @Observable
 public final class StockListViewModel: StockListViewModelProtocol {
     
-    public private(set) var stocks: [StockListItemViewData] = StockListItemViewData.mockStocks
-    public private(set) var isConnected: Bool = false
-    
     @ObservationIgnored
     private var livePriceService: LivePriceServiceProtocol
-
     @ObservationIgnored
     private var cancellables: Set<AnyCancellable> = []
+    private var selectedSort: StockSortOption = .price
+    
+    public var stocks: [StockListItemViewData] = StockListItemViewData.mockStocks
+    public private(set) var isConnected: Bool = false
     
     public init(livePriceService: LivePriceServiceProtocol = LivePriceService()) {
         self.livePriceService = livePriceService
@@ -52,6 +53,16 @@ public final class StockListViewModel: StockListViewModelProtocol {
         livePriceService.stopTracking()
     }
     
+    public func sort(filter: StockSortOption) {
+        selectedSort = filter
+        switch filter {
+        case .price:
+            stocks = stocks.sorted { $0.numericPrice > $1.numericPrice }
+        case .priceChange:
+            stocks = stocks.sorted { $0.numericChange > $1.numericChange }
+        }
+    }
+    
     private func setupService() {
         livePriceService.priceUpdatePublisher
             .receive(on: DispatchQueue.main)
@@ -64,7 +75,6 @@ public final class StockListViewModel: StockListViewModelProtocol {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] connected in
                 self?.isConnected = connected
-                if !connected { self?.disconnect() }
             }
             .store(in: &cancellables)
             
@@ -81,6 +91,7 @@ public final class StockListViewModel: StockListViewModelProtocol {
                 description: oldData.description
             )
             stocks[index] = newData
+            sort(filter: selectedSort)
         }
     }
 }

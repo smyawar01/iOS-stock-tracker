@@ -52,7 +52,7 @@ public final class EchoWebSocketClient: WebSocketClientProtocol {
             switch result {
             case .failure(let error):
                 print("WebSocket receiving error: \(error)")
-                connectionSubject.send(false)
+                disconnect()
             case .success(let message):
                 switch message {
                 case .string(let text):
